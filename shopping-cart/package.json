@@ -1,0 +1,11 @@
+{
+  "name": "practica-consolidacion-03-erick-calabrano",
+  "version": "1.0.0",
+  "description": "Evaluación final de módulo 03 del bootcamp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Calabrano S.",
+  "license": "ISC"
+}
