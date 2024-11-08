@@ -18,3 +18,6 @@ To test the Simple Bank Simulator, use the following credentials:
 <div align="center">
   <img src="preview-images/simple-bank-simulator.png" alt="Bank simulator login screen" width=600>
 </div>
+
+### Todo app - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/todo-app/index.html)
+This simple to-do list app allows users to manage tasks. Users can add tasks through a form, view the task list, and mark tasks as "Done" to remove them. The initial task list is preloaded with sample items. It's only for testing, it doesn't include local storage.
