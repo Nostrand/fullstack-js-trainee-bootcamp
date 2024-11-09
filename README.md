@@ -34,3 +34,10 @@ An interactive shopping cart mini-project that combines frontend and JavaScript 
 <div align="center">
   <img src="preview-img/shopping-cart.jpg" alt="Shopping cart" width=600>
 </div>
+
+### Song lyrics finder - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/song-lyrics-finder/src/index.html)
+This is a simple web app that allows users to search for song lyrics by entering the artist’s name and song title. Using the Lyrics.ovh API, it fetches the lyrics and displays them in a clean and user-friendly interface.
+
+<div align="center">
+  <img src="preview-img/song-lyrics-finder.jpg" alt="Song lyrics finder" width=600>
+</div>

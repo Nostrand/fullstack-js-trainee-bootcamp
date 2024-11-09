@@ -1,0 +1,31 @@
+.lyric-line {
+    font-style: italic;
+    color: orange;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.lyric-line::before {
+    content: '“';
+    position: absolute;
+    left: 0;
+    color: orange;
+    font-size: 1.5em;
+}
+
+.lyric-line::after {
+    content: '”';
+    color: orange;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-color: #fff !important; 
+    color: inherit;
+    transition: background-color 5000s ease-in-out 0s; /* Keeps background override */
+}
