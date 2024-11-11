@@ -6,7 +6,7 @@ const routineList = document.getElementById('routine-list');
 function* generadorEjercicio(semanas, dias){
     const ejercicios = ['Squats', 'Bench', 'Deadlift', 'Press'];
 
-    const totalDias = semanas * 7; // Total de días basado en el número de semanas
+    const totalDias = semanas * 7;
 
     for (let dia = 1; dia <= totalDias; dia++) {
         if (dia % dias === 0) { // To include only multiples of the number chosen by the user
