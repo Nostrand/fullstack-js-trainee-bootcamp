@@ -49,3 +49,10 @@ This is a simple web app that allows users to search for song lyrics by entering
 <div align="center">
   <img src="preview-img/song-lyrics-finder.jpg" alt="Song lyrics finder" width=600>
 </div>
+
+### Star Wars characters API - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/star-wars-characters-api/src/index.html)
+A character viewing app using the Star Wars API (SWAPI) to display information about characters in the Star Wars universe. On hover, it displays 5 characters per category, featuring real life dimension stats like height, weight and species. Designed to practice API calls and dynamic rendering with JavaScript.
+
+<div align="center">
+  <img src="preview-img/star-wars-characters-api.jpg" alt="Star wars characters API" width=600>
+</div>

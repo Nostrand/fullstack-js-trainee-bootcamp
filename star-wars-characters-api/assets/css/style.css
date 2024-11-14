@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Body background and text color */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Title (h1) color */
+h1 {
+    color: #FFCC00; /* Yellow color, similar to Star Wars logo */
+}
+
+/* Apply to all .card elements to make them consistent */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Light shadow */
+    border: 1px solid #444;  /* Dark border to match the other cards */
+    border-radius: 0;  /* No rounded corners */
+    color: white;
+}
+
+/* Ensure the cards have the same dark background */
+.card.bg-dark {
+    background-color: #333;  /* Match the background color */
+}
+
+/* Ensure card text is white for readability */
+.card-title, .card-text {
+    color: white;  /* White text for the cards */
+}
+
+
+/* Card background */
+.card, .info-card {
+    background-color: #222; /* Dark gray for card background */
+    color: white; /* Ensures card text is white */
+}
+
+
+/* Info circle styling */
+.info-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Card for general info with dark background */
+.info-card {
+    background-color: #222; /* Dark background for the info card */
+    border: 1px solid #444; /* Slightly darker border for contrast */
+    padding: 15px;
+    color: white; /* Ensure text inside is white */
+}
+
+/* Display of character cards */
+.character-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.character-display .card {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+}
+
+/* Range section circle colors */
+.range-1-section .info-circle {
+    background-color: rgba(255, 166, 0, 0.5);
+}
+.range-2-section .info-circle {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+.range-3-section .info-circle {
+    background-color: rgba(0, 128, 255, 0.5);
+}
+
+/* Basic timeline line */
+.timeline-line {
+    position: absolute;
+    left: -10px; 
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #343a40;
+}
