@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    background: linear-gradient(120deg, #f8b500 0%, #e74c3c 50%, #d35400 100%);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+.pizza-types-box {
+    display: flex; /* To align items horizontally */
+    justify-content: space-between; /* Ensures equal spacing */
+    align-items: center; /* Vertically center the items */
+}
+
+.pizza-option {
+    padding: 10px;
+}
+
+.divider {
+    border-left: 2px solid #ccc; /* Vertical line between options */
+    height: 30px; /* Adjust based on your content height */
+    margin: 0 15px; /* Space between the line and pizza options */
+}
+
+.pizza-option:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

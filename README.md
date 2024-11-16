@@ -35,6 +35,13 @@ An interactive shopping cart mini-project that combines frontend and JavaScript 
   <img src="preview-img/shopping-cart.jpg" alt="Shopping cart" width=600>
 </div>
 
+### Custom pizza order - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/custom-pizza-order/src/index.html)
+A dynamic pizza ordering app that allows users to select pizza sizes, add extra ingredients, and customize their tip amount. The app automatically calculates the subtotal, tip (both suggested and custom), and the total cost.
+
+<div align="center">
+  <img src="preview-img/custom-pizza-order.jpg" alt="Custom pizza order website." width=600>
+</div>
+
 
 ### Exercise routine creator - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/exercise-routine-creator/src/index.html)
 A simple exercise routine generator using JavaScript and Bootstrap to create customizable weekly workout plans.
@@ -42,6 +49,8 @@ A simple exercise routine generator using JavaScript and Bootstrap to create cus
 <div align="center">
   <img src="preview-img/exercise-routine-creator.jpg" alt="Exercise routine creator." width=600>
 </div>
+
+
 
 ### Song lyrics finder - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/song-lyrics-finder/src/index.html)
 This is a simple web app that allows users to search for song lyrics by entering the artist’s name and song title. Using the Lyrics.ovh API, it fetches the lyrics and displays them in a clean and user-friendly interface.

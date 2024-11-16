@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom pizza order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column: Improve Your Pizza -->
+            <div class="col-md-6">
+
+                <h2 class="mb-4">Improve Your Pizza</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label text-muted">You can choose 3 free ingredients. Each additional ingredient costs $800.</label>
+                        <p class="mt-2">Available ingredients to add to your pizza:</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="carne" name="ingrediente" value="Ingrediente 1">
+                            <label class="form-check-label" for="ingrediente1">Meat</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="pollo" name="ingrediente" value="Ingrediente 2">
+                            <label class="form-check-label" for="ingrediente2">Chicken</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="tocino" name="ingrediente" value="Ingrediente 3">
+                            <label class="form-check-label" for="ingrediente3">Bacon</label>
+                        </div>
+                        <!-- Add more ingredients as needed -->
+                        <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="mozarella" name="ingrediente" value="Ingrediente 3">
+                        <label class="form-check-label" for="ingrediente3">Mozzarella</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="champiñon" name="ingrediente" value="Ingrediente 3">
+                            <label class="form-check-label" for="ingrediente3">Mushroom</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cebolla" name="ingrediente" value="Ingrediente 3">
+                            <label class="form-check-label" for="ingrediente3">Onion</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="piña" name="ingrediente" value="Ingrediente 3">
+                            <label class="form-check-label" for="ingrediente3">Pineapple</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="pimenton" name="ingrediente" value="Ingrediente 3">
+                            <label class="form-check-label" for="ingrediente3">Bell pepper</label>
+                        </div>
+                    </div>
+                    <!-- More fields can be added here if necessary -->
+                </form>
+            </div>
+            
+            <!-- Right Column: Resumen del pedido -->
+            <div class="col-md-6">
+                <h2 class="mb-4">Order Summary</h2>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <label for="pizzaXL" class="pizza-type me-3">Pizza XL</label>
+                            <input class="form-check-input me-2" type="radio" id="pizzaXL" name="pizzaType" value="XL" checked>
+                            <div class="divider"></div> <!-- Vertical divider here -->
+                            <label for="pizzaL" class="me-3">Pizza L</label>
+                            <input class="form-check-input me-2" type="radio" id="pizzaL" name="pizzaType" value="L">
+                            <div class="divider"></div> <!-- Vertical divider here -->
+                            <label for="pizzaM" class="me-3">Pizza M</label>
+                            <input class="form-check-input me-2" type="radio" id="pizzaM" name="pizzaType" value="M">
+                            <div class="divider"></div> <!-- Vertical divider here -->
+                            
+                        </div>
+                        <span id="pizza-cost">$15,000</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Extra Ingredients
+                        <span id="costoExtras">$0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Suggested Tip (10%) or Custom
+                        <span id="propina">$0</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total
+                        <span id="costo-total">$15,000</span>
+                    </li>
+                </ul>
+
+                <!-- Input for custom tip amount -->
+    <div class="mb-3">
+        <label for="customTip" class="form-label">Add Custom Tip (optional):</label>
+        <input type="number" class="form-control" id="customTip" name="customTip" placeholder="Enter tip amount" min="0">
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" id="enviar-pedido" class="btn btn-dark">Submit Order</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
