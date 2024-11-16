@@ -4,7 +4,7 @@ Projects and tasks from the Fullstack JS Trainee Bootcamp, featuring frontend an
 ## Frontend Section
 ### Mini-Projects:
 
-### Simple bank simulator - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/bank-simulator/src/index.html)
+### Simple bank simulator - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/simple-bank-simulator/src/index.html)
 A basic online banking simulator designed to practice core JavaScript concepts. The application features a simple, alerts based interface that allows users to log in, check their balance, make withdrawals, and deposit funds.
 
 To test the Simple Bank Simulator, use the following credentials:
