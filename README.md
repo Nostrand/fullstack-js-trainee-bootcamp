@@ -50,6 +50,12 @@ A simple exercise routine generator using JavaScript and Bootstrap to create cus
   <img src="preview-img/exercise-routine-creator.jpg" alt="Exercise routine creator." width=600>
 </div>
 
+### Portfolio website - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/portfolio-website/src/index.html)
+This is an interactive portfolio which includes all the projects present in this repo, and a sci-fi style aesthetic.
+
+<div align="center">
+  <img src="preview-img/portfolio-website.jpg" alt="Portfolio website" width=600>
+</div>
 
 
 ### Song lyrics finder - [Live View](https://nostrand.github.io/fullstack-js-trainee-bootcamp/song-lyrics-finder/src/index.html)

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!-- Seccion Navbar -->
+        <navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ms-3 enlarge-on-hover" href="#">Erick Calabrano</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!--<li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>  Aún no tengo diseño para esto-->
+                    <li class="nav-item"><a class="nav-link enlarge-on-hover" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link enlarge-on-hover" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link enlarge-on-hover" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </navbar>
+    <!-- Fin Sección Navbar -->
+
+    <!-- Sección Portafolio de Proyectos -->
+    <header class="text-center mb-4 mt-5">
+        <h4>Projects</h4>
+    </header>
+
+    <div id="projects-container" class="container projects-container">
+    </div>
+    <!-- Fin Sección Proyectos -->
+     
+    <!-- Modal Structure (one modal for all projects) -->
+    <div class="detalles container" id="detallesProyecto" style="display: none;">
+        <div class="card m-5">
+            <button type="button" class="btn-close" aria-label="Close"></button>
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img id="modalProjectImage" class="img-fluid rounded-start" alt="Project Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 id="modalProjectTitle" class="card-title"></h5>
+                        <p id="modalProjectDescription" class="card-text"></p>
+                        <p class="card-text"><small class="custom-color">Full Stack Javascript Trainee Bootcamp</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+
+
+    <!-- Technical Skills section -->
+        <section id="skills">
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <header>
+                                    <h5 class="card-title text-center mb-4">Technical Skills</h5>
+                                </header>
+                                <ul>
+                                    <li>Web Development using <i class="bi bi-bootstrap"></i> Bootstrap, <i class="bi bi-filetype-html"></i> HTML, <i class="bi bi-filetype-css"></i> CSS and <i class="bi bi-filetype-js"></i> JavaScript / Node.js.</li>
+                                    <li>Data Analysis with <i class="bi bi-file-earmark-code"></i> Python / R, <i class="bi bi-file-spreadsheet"></i> spreadsheets and <i class="bi bi-clipboard-data-fill"></i> Power BI.</li>
+                                    <li>Project Management with <i class="bi bi-kanban-fill"></i> Jira.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Technical Skills end-->
+
+    <!-- Contact form section -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <header>
+                                <h5 class="card-title text-center">Contact</h5>
+                            </header>
+                            <form id="contact">
+                                <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="John-117" required maxlength="50" pattern="[A-Za-z\s\-]+">
+                                <small id="mensajeHelp" class="form-text text-muted visually-hidden">Write your name here.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required placeholder="testcorreo@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                    <small id="emailHelp" class="form-text text-muted visually-hidden">Write your email here.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Subject</label>
+                                    <input type="text" class="form-control" id="asunto" aria-describedby="asuntoHelp" placeholder="Reason for contact" required minlength="5" maxlength="100">
+                                    <small id="asuntoHelp" class="form-text text-muted visually-hidden">Subject text.</small>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="mensaje">Message</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" aria-describedby="mensajeHelp" placeholder="Message text" required minlength="20" maxlength="500"></textarea>
+                                    <small id="mensajeHelp" class="form-text text-muted visually-hidden">Write your message here.</small>
+                                </div>
+
+                                <button type="submit" class="btn btn-dark enlarge-on-hover">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End of contact form -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../assets/js/main.js" type="module"></script>
+</body>
+</html>

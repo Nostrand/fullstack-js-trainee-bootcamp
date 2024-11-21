@@ -1,0 +1,11 @@
+{
+  "name": "final-drilling-erickcalabrano",
+  "version": "1.0.0",
+  "description": "Práctica de Consolidación Módulo 02",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Calabrano Sáez",
+  "license": "ISC"
+}
